@@ -1,0 +1,38 @@
+[
+    {
+        "product_id": "P001",
+        "category": "iPhone"
+    },
+    {
+        "product_id": "P002",
+        "category": "Phones"
+    },
+    {
+        "product_id": "P003",
+        "category": "Accessories"
+    },
+    {
+        "product_id": "P004",
+        "category": "Laptops"
+    },
+    {
+        "product_id": "P005",
+        "category": "Laptops"
+    },
+    {
+        "product_id": "P006",
+        "category": "Accessories"
+    },
+    {
+        "product_id": "P007",
+        "category": "Accessories"
+    },
+    {
+        "product_id": "P008",
+        "category": "Accessories"
+    },
+    {
+        "product_id": "P009",
+        "category": "Smart Watches"
+    }
+]

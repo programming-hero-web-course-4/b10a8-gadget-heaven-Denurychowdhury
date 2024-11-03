@@ -1,0 +1,155 @@
+[
+    {
+        "product_id": "P001",
+        "product_title": "Apple iPhone 15 Pro Max",
+        "product_image": "https://i.ibb.co.com/D7qNgW1/iphone1.jpg",
+        "category": "iPhone",
+        "price": 1299,
+        "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
+        "specification": [
+            "6.7-inch Super Retina XDR display",
+            "A17 Bionic chip",
+            "Triple-camera system (48MP Main, 12MP Telephoto, 12MP Ultrawide)",
+            "LiDAR Scanner",
+            "Up to 2TB storage"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "P002",
+        "product_title": "Samsung Galaxy S23 Ultra",
+        "product_image": "https://i.ibb.co.com/Bjf54zv/samsung1.jpg",
+        "category": "Phones",
+        "price": 1199,
+        "description": "The Samsung Galaxy S23 Ultra redefines photography with 200MP main camera.",
+        "specification": [
+            "6.8-inch Dynamic AMOLED 2X display",
+            "Snapdragon 8 Gen 2 processor",
+            "Quad-camera system (200MP Main, 12MP Ultra Wide, 10MP Periscope Telephoto)",
+            "S Pen included",
+            "Up to 1TB storage"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "P003",
+        "product_title": "Sony WH-1000XM5",
+        "product_image": "https://i.ibb.co.com/BrYP59b/accressories1.jpg",
+        "category": "Accessories",
+        "price": 399,
+        "description": "Industry-leading noise-canceling headphones with exceptional sound quality.",
+        "specification": [
+            "Active noise cancellation",
+            "30-hour battery life",
+            "Hi-Res Audio certified",
+            "Touch controls",
+            "Quick charge"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "P004",
+        "product_title": "Apple MacBook Pro 14 M2",
+        "product_image": "https://i.ibb.co.com/kMNZwch/mac1.webp",
+        "category": "Laptops",
+        "price": 1999,
+        "description": "The new MacBook Pro with M2 chip, delivering next-level performance.",
+        "specification": [
+            "14-inch Liquid Retina XDR display",
+            "Apple M2 Pro chip",
+            "Up to 32GB RAM",
+            "Up to 2TB SSD",
+            "Battery life up to 18 hours"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "P005",
+        "product_title": "Dell XPS 13 Plus",
+        "product_image": "https://i.ibb.co.com/DGZvZJY/laptop1.jpg",
+        "category": "Laptops",
+        "price": 1499,
+        "description": "A revolutionary redesign of the XPS 13 with a stunning display and powerful performance.",
+        "specification": [
+            "13.4-inch OLED InfinityEdge display",
+            "12th Gen Intel Core i7 processor",
+            "16GB RAM",
+            "512GB SSD",
+            "Fingerprint reader"
+        ],
+        "availability": false,
+        "rating": 4.5
+    },
+    {
+        "product_id": "P006",
+        "product_title": "Sony PlayStation 5",
+        "product_image": "https://i.ibb.co.com/PhtD7y4/playstation1.jpg",
+        "category": "Accessories",
+        "price": 499,
+        "description": "Experience lightning-fast loading and ultra-high-speed SSD with PS5.",
+        "specification": [
+            "Ultra-high-speed SSD",
+            "Ray tracing technology",
+            "4K TV gaming",
+            "DualSense wireless controller",
+            "8K output support"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "P007",
+        "product_title": "Bose SoundLink Revolve+ II",
+        "product_image": "https://i.ibb.co.com/rfJCQFV/accessories2.webp",
+        "category": "Accessories",
+        "price": 299,
+        "description": "Portable Bluetooth speaker with 360° sound and water-resistant design.",
+        "specification": [
+            "360° sound",
+            "Battery life up to 17 hours",
+            "Water-resistant (IPX4)",
+            "Built-in speakerphone",
+            "Easy voice control"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "P008",
+        "product_title": "Nikon Z7 II",
+        "product_image": "https://i.ibb.co.com/PzjVVBc/nikon2.webp",
+        "category": "Accessories",
+        "price": 2499,
+        "description": "High-resolution mirrorless camera with exceptional autofocus and dynamic range.",
+        "specification": [
+            "45.7MP full-frame sensor",
+            "Dual EXPEED 6 processors",
+            "4K UHD video recording",
+            "In-body image stabilization",
+            "Weather-sealed body"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "P009",
+        "product_title": "Garmin Fenix 7",
+        "product_image": "https://i.ibb.co.com/mBfbgBT/watch2.webp",
+        "category": "Smart Watches",
+        "price": 699,
+        "description": "Premium multisport GPS watch with advanced fitness and health tracking.",
+        "specification": [
+            "1.3-inch always-on display",
+            "Built-in GPS",
+            "Heart rate and SpO2 monitoring",
+            "Battery life up to 18 days",
+            "Water-resistant (10 ATM)"
+        ],
+        "availability": true,
+        "rating": 4.7
+    }
+]
