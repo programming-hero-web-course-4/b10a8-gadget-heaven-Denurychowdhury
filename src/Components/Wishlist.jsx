@@ -18,7 +18,7 @@ const Wishlist = () => {
     }
     return (
         <div className="md:w-11/12 mx-auto my-8">
-            <h1>wishlist</h1>
+            <h1 className="text-2xl font-bold">wishlist</h1>
             {
                 wish.map(item => <div key={item.product_id} className="flex md:flex-row flex-col justify-between items-center p-3 border rounded-xl bg-white">
                     <div className="flex md:flex-row flex-col items-center gap-5">
@@ -27,8 +27,8 @@ const Wishlist = () => {
                         </div>
                         <div className="space-y-3">
                             <h1 className="text-xl font-bold">{item.product_title}</h1>
-                            <p>{item.description}</p>
-                            <p>Price:{item.price}</p>
+                            <p><span className="text-xl font-bold">Description:</span>{item.description}</p>
+                            <p className="text-xl font-bold">Price:$ {item.price}</p>
                             <button
                                 onClick={() => handledTocarts(item)}
                                 className="btn text-xl text-white border border-fuchsia-500 rounded-full bg-gradient-to-b from-purple-600 to-[#da62e6]">

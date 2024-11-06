@@ -6,6 +6,7 @@ import Banner from "../Components/Banner";
 import { CartCount, Wishcart } from "../Layouts/MainLayout";
 import { getCartItem, handleaddCart } from "../Utils";
 import usetitle from "../Utils/title";
+import { IoMdStar } from "react-icons/io";
 import { toast } from "react-toastify";
 
 
@@ -56,7 +57,7 @@ const ProductDetails = () => {
                         </div>
                         <div className="space-y-1">
                             <h1 className="text-2xl font-bold">{details.product_title}</h1>
-                            <p>Price:${details.price}</p>
+                            <p className="text-xl font-bold">Price:${details.price}</p>
                             {
                                 details.availability ? <h1 className="bg-[#eaf5e6] text-xl text-[#309C08] px-5 py-1 border-2 border-[#309C08] w-fit rounded-full">In stock</h1> : ''
                             }
@@ -67,16 +68,21 @@ const ProductDetails = () => {
                                     details.specification?.map((list, index) => <li key={index}>{list}</li>)
                                 }
                             </ul>
-                            <div className="rating">
-                                <input type="radio" name="rating-1" className="mask mask-star" />
-                                <input type="radio" name="rating-1" className="mask mask-star" />
-                                <input type="radio" name="rating-1" className="mask mask-star" />
-                                <input type="radio" name="rating-1" className="mask mask-star" defaultChecked />
-                                <input type="radio" name="rating-1" className="mask mask-star" />
+                            <div className="rating  flex flex-col">
+                                <h1 className="text-base font-bold flex items-center">Rating  <span className="text-[#f9c004]"><IoMdStar /></span></h1>
+                                <div className="flex items-center ">
+                                    <div className="text-xl flex text-[#f9c004]">
+                                        <IoMdStar />
+                                        <IoMdStar />
+                                        <IoMdStar />
+                                        <IoMdStar />
+                                    </div>
+                                    <span className=""><IoMdStar /></span>
+                                </div>
                             </div>
                             <div className="flex items-center gap-4">
-                                <button onClick={() => handledTocarts(details)} className="px-4 py-2 rounded-full flex items-center bg-purple-500"><span>Add to cart</span><FiShoppingCart /></button>
-                                <button disabled={isActives} onClick={() => { setWish([...wish, details]), setIsActives(true) }} className="p-3 rounded-full border border-gray-400"><FaRegHeart /></button>
+                                <button onClick={() => handledTocarts(details)} className="px-4 py-2 rounded-full flex items-center text-white font-bold bg-purple-500"><span>Add to cart</span><FiShoppingCart /></button>
+                                <button disabled={isActives} onClick={() => { setWish([...wish, details]), setIsActives(true), toast.success('Add to wishlist') }} className="p-3 rounded-full border border-gray-400"><FaRegHeart /></button>
                             </div>
                         </div>
                     </div>

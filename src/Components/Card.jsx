@@ -2,21 +2,23 @@
 
 // import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom";
+import usetitle from "../Utils/title";
 
 
 
 
 
 const Card = ({ card }) => {
-    // const { category } = useParams()
-    // console.log(category);
+
+    // distructure
     const { product_id, product_title, product_image, price, category } = card;
     const navigate = useNavigate()
-    // const isSmart = category === "Smart Watches"
-    // console.log(isSmart);
+
+    usetitle(category)
     const handlenav = () => {
         navigate(`/productdetails/${product_id}`)
     }
+
     return (
         <div className="p-3 border border-gray-300  rounded-lg">
             <div className="card bg-base-100  shadow-xl">

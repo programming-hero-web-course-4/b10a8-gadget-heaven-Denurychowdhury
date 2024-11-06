@@ -12,7 +12,7 @@ const Dashboard = () => {
                 btntwo={'Wishlist'}
                 title={'Dashboard'}
                 paragraph=
-                {'Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!'}
+                {'"Your Cart, Your Wishlist! Review, update, and checkout your favorite gadgets all in one place—seamless shopping just a click away!"'}
             >
             </Banner>
             {/* children */}

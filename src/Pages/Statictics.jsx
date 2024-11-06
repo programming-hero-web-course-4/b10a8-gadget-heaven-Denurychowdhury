@@ -20,7 +20,7 @@ const Statictics = () => {
             <div>
                 <Banner
                     title={'Statistics'}
-                    paragraph={'Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!'}
+                    paragraph={'Our gadget shop website has seen a 40% increase in user engagement this month, with a 25% boost in new visitor traffic driven by promotions on trending tech products.'}
                 >
                 </Banner>
             </div>

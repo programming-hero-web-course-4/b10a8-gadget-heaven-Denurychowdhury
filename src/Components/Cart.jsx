@@ -35,11 +35,8 @@ const Cart = () => {
         const moneys = product.reduce((prev, current) => prev + current.price, 0)
         // console.log(moneys);
         setMoney(money + moneys)
-        setCount(count)
     }, [])
 
-
-    // console.log(cart);
     // sorted by category cart
     const handlesort = () => {
         const newCart = getCartItem()
@@ -55,7 +52,8 @@ const Cart = () => {
         const moneys = allcarts.reduce((prev, current) => prev + current.price, 0)
         console.log(moneys);
         setMoney(moneys)
-        setCount(count - 1)
+        const carn = 1;
+        setCount(count + carn)
     }
     return (
         <div className="grid grid-cols-1 gap-4 my-10 md:w-11/12 mx-auto ">
@@ -78,20 +76,20 @@ const Cart = () => {
             {
                 cart.map(item =>
                     <div key={item.product_id} className=" flex md:flex-row flex-col rounded-lg justify-between items-center p-4 bg-slate-200">
-                        <div className="flex gap-5 justify-between">
+                        <div className="flex md:flex-row flex-col gap-5 justify-between">
                             <Modal open={open} center showCloseIcon={false}>
                                 <div className="flex flex-col border-2 border-gray-400 rounded-2xl  items-center px-10  justify-between">
                                     <div>
-                                        <img src={checkmark} alt="Success" />
+                                        <img className="" src={checkmark} alt="Success" />
                                     </div>
                                     <h2>Payment Successfully</h2>
                                     <p>Thanks for purchasing.</p>
                                     <p>Total:{money}</p>
-                                    <button className="btn" onClick={() => { onCloseModal(), modalget(), localStorage.clear(), setCount(0) }}>CLose</button>
+                                    <button className="btn" onClick={() => { onCloseModal(), modalget(), localStorage.clear() }}>CLose</button>
                                 </div>
                             </Modal>
                             <div>
-                                <img className="h-24 w-36 rounded-md" src={item.product_image} alt="" />
+                                <img className="md:h-24 md:w-36 w-full rounded-md" src={item.product_image} alt="" />
                             </div>
                             <div>
                                 <h1 className="text-xl font-bold">{item.product_title}</h1>

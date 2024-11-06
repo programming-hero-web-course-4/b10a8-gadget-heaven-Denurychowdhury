@@ -22,7 +22,7 @@ const MainLayout = () => {
                 <CartCount.Provider value={[count, setCount]}>
                     <Navbar></Navbar>
                     {/* Outlet */}
-                    <div className="min-h-screen[calc(100vh-232px)] ">
+                    <div className="min-h-screen ">
                         <Outlet></Outlet>
                     </div>
                     {/* footer */}

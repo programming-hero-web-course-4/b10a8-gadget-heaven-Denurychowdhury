@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import About from "../Components/About";
 import Cart from "../Components/Cart";
 import ProductCards from "../Components/ProductCards";
 import Wishlist from "../Components/Wishlist";
@@ -60,6 +61,10 @@ const routes = createBrowserRouter([
                         element: <Wishlist></Wishlist>
                     }
                 ]
+            },
+            {
+                path: '/about',
+                element: <About></About>
             }
         ]
     },
