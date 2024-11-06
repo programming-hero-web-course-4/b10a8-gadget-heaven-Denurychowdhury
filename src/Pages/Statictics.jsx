@@ -1,0 +1,55 @@
+import { useLoaderData } from "react-router-dom";
+
+import { Area, Bar, CartesianGrid, ComposedChart, Legend, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import Banner from "../Components/Banner";
+import usetitle from "../Utils/title";
+
+const Statictics = () => {
+    usetitle('Statictics')
+    const data = useLoaderData()
+    console.log(typeof data);
+    const bardata = data.map(item => ({
+        name: item.product_title,
+        price: item.price,
+        rating: item.rating,
+        id: item.id
+    }));
+    console.log(typeof bardata);
+    return (
+        <div className="">
+            <div>
+                <Banner
+                    title={'Statistics'}
+                    paragraph={'Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!'}
+                >
+                </Banner>
+            </div>
+            <div className="md:w-11/12 mx-auto w-full flex justify-center items-center mt-10">
+                <ResponsiveContainer width="100%" height={400}>
+                    <ComposedChart
+                        data={bardata}
+                        margin={{
+                            top: 20,
+                            right: 20,
+                            bottom: 20,
+                            left: 20,
+                        }}
+                    >
+                        <XAxis dataKey="name" />
+                        <YAxis />
+                        <Tooltip />
+                        <Legend />
+                        <CartesianGrid stroke="#D8A7D3" />
+
+                        <Area type="monotone" dataKey="rating" fill="#8884d8" stroke="#8884d8" />
+                        <Bar dataKey="price" barSize={20} fill="#413ea0" />
+                        <Line type="monotone" dataKey="id" stroke="#D8A7D3" />
+                    </ComposedChart>
+                </ResponsiveContainer>
+            </div>
+
+        </div >
+    );
+};
+
+export default Statictics;

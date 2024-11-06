@@ -1,9 +1,9 @@
 [
     {
-        "product_id": "P001",
-        "product_title": "Apple iPhone 15 Pro Max",
+        "product_id": 1,
+        "product_title": "Apple iPhone 15 Pro",
         "product_image": "https://i.ibb.co.com/D7qNgW1/iphone1.jpg",
-        "category": "iPhone",
+        "category": "IPhone",
         "price": 1299,
         "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
         "specification": [
@@ -17,9 +17,9 @@
         "rating": 4.8
     },
     {
-        "product_id": "P002",
-        "product_title": "Samsung Galaxy S23 Ultra",
-        "product_image": "https://i.ibb.co.com/Bjf54zv/samsung1.jpg",
+        "product_id": 2,
+        "product_title": "Samsung Galaxy S23",
+        "product_image": "https://i.ibb.co.com/Rv2zDXj/s23.webp",
         "category": "Phones",
         "price": 1199,
         "description": "The Samsung Galaxy S23 Ultra redefines photography with 200MP main camera.",
@@ -33,33 +33,16 @@
         "availability": true,
         "rating": 4.7
     },
-    {
-        "product_id": "P003",
-        "product_title": "Sony WH-1000XM5",
-        "product_image": "https://i.ibb.co.com/BrYP59b/accressories1.jpg",
-        "category": "Accessories",
-        "price": 399,
-        "description": "Industry-leading noise-canceling headphones with exceptional sound quality.",
-        "specification": [
-            "Active noise cancellation",
-            "30-hour battery life",
-            "Hi-Res Audio certified",
-            "Touch controls",
-            "Quick charge"
-        ],
-        "availability": true,
-        "rating": 4.6
-    },
-    {
-        "product_id": "P004",
-        "product_title": "Apple MacBook Pro 14 M2",
+   {
+        "product_id": 3,
+        "product_title": "HP Spectre x360 14",
         "product_image": "https://i.ibb.co.com/kMNZwch/mac1.webp",
         "category": "Laptops",
         "price": 1999,
-        "description": "The new MacBook Pro with M2 chip, delivering next-level performance.",
+        "description": "The HP Spectre x360 delivers next-level performance and versatility.",
         "specification": [
             "14-inch Liquid Retina XDR display",
-            "Apple M2 Pro chip",
+            "Intel Core i7 processor",
             "Up to 32GB RAM",
             "Up to 2TB SSD",
             "Battery life up to 18 hours"
@@ -68,7 +51,7 @@
         "rating": 4.9
     },
     {
-        "product_id": "P005",
+        "product_id": 4,
         "product_title": "Dell XPS 13 Plus",
         "product_image": "https://i.ibb.co.com/DGZvZJY/laptop1.jpg",
         "category": "Laptops",
@@ -85,25 +68,76 @@
         "rating": 4.5
     },
     {
-        "product_id": "P006",
-        "product_title": "Sony PlayStation 5",
-        "product_image": "https://i.ibb.co.com/PhtD7y4/playstation1.jpg",
-        "category": "Accessories",
-        "price": 499,
-        "description": "Experience lightning-fast loading and ultra-high-speed SSD with PS5.",
+        "product_id": 5,
+        "product_title": "HP Spectre x360 14",
+        "product_image": "https://i.ibb.co.com/F43Nc5P/csm-IMG-2120-22dba18202.jpg",
+        "category": "Laptops",
+        "price": 1599,
+        "description": "A convertible laptop with a sleek design and powerful performance.",
         "specification": [
-            "Ultra-high-speed SSD",
-            "Ray tracing technology",
-            "4K TV gaming",
-            "DualSense wireless controller",
-            "8K output support"
+            "13.5-inch OLED display",
+            "Intel Evo Core i7",
+            "16GB RAM",
+            "1TB SSD",
+            "Fingerprint reader"
         ],
         "availability": true,
-        "rating": 4.9
+        "rating": 4.6
     },
     {
-        "product_id": "P007",
-        "product_title": "Bose SoundLink Revolve+ II",
+        "product_id": 6,
+        "product_title": "Lenovo ThinkPad X1 ",
+        "product_image": "https://i.ibb.co.com/SVvP92w/lenovo2.webp",
+        "category": "Laptops",
+        "price": 1799,
+        "description": "Business-class laptop with high durability and performance.",
+        "specification": [
+            "14-inch WQHD display",
+            "Intel Core i7",
+            "16GB RAM",
+            "512GB SSD",
+            "Carbon fiber chassis"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 7,
+        "product_title": "Asus ROG Zephyrus G14",
+        "product_image": "https://i.ibb.co.com/bJHkRm0/asus.jpg",
+        "category": "Laptops",
+        "price": 1499,
+        "description": "A compact gaming laptop with powerful graphics and performance.",
+        "specification": [
+            "14-inch QHD display",
+            "AMD Ryzen 9",
+            "16GB RAM",
+            "1TB SSD",
+            "NVIDIA GeForce RTX 3060"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 8,
+        "product_title": "Sony WH-1000XM5",
+        "product_image": "https://i.ibb.co.com/BrYP59b/accressories1.jpg",
+        "category": "Accessories",
+        "price": 399,
+        "description": "Industry-leading noise-canceling headphones with exceptional sound quality.",
+        "specification": [
+            "Active noise cancellation",
+            "30-hour battery life",
+            "Hi-Res Audio certified",
+            "Touch controls",
+            "Quick charge"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 9,
+        "product_title": "Bose SoundLink",
         "product_image": "https://i.ibb.co.com/rfJCQFV/accessories2.webp",
         "category": "Accessories",
         "price": 299,
@@ -119,37 +153,54 @@
         "rating": 4.6
     },
     {
-        "product_id": "P008",
-        "product_title": "Nikon Z7 II",
-        "product_image": "https://i.ibb.co.com/PzjVVBc/nikon2.webp",
-        "category": "Accessories",
-        "price": 2499,
-        "description": "High-resolution mirrorless camera with exceptional autofocus and dynamic range.",
+        "product_id": 10,
+        "product_title": "Acer Swift 5",
+        "product_image": "https://i.ibb.co.com/b1NbVR7/swift.jpg",
+        "category": "Laptops",
+        "price": 1299,
+        "description": "Lightweight laptop with high performance and sleek design, perfect for on-the-go productivity.",
         "specification": [
-            "45.7MP full-frame sensor",
-            "Dual EXPEED 6 processors",
-            "4K UHD video recording",
-            "In-body image stabilization",
-            "Weather-sealed body"
+            "14-inch Full HD IPS display",
+            "Intel Core i7-1260P",
+            "16GB RAM",
+            "1TB SSD",
+            "Up to 12 hours battery life"
         ],
         "availability": true,
-        "rating": 4.8
+        "rating": 4.5
     },
     {
-        "product_id": "P009",
-        "product_title": "Garmin Fenix 7",
-        "product_image": "https://i.ibb.co.com/mBfbgBT/watch2.webp",
-        "category": "Smart Watches",
-        "price": 699,
-        "description": "Premium multisport GPS watch with advanced fitness and health tracking.",
+        "product_id": 11,
+        "product_title": "Apple MacBook Air M2",
+        "product_image": "https://i.ibb.co.com/vwWbtNh/macbook-air-15-inch-midnight-01-500x500.webp",
+        "category": "MacBook",
+        "price": 1199,
+        "description": "Ultra-lightweight MacBook Air powered by the M2 chip, ideal for everyday tasks.",
         "specification": [
-            "1.3-inch always-on display",
-            "Built-in GPS",
-            "Heart rate and SpO2 monitoring",
-            "Battery life up to 18 days",
-            "Water-resistant (10 ATM)"
+            "13.6-inch Liquid Retina display",
+            "Apple M2 chip",
+            "Up to 24GB RAM",
+            "Up to 2TB SSD",
+            "Battery life up to 18 hours"
         ],
         "availability": true,
         "rating": 4.7
+    },
+    {
+        "product_id": 12,
+        "product_title": "Apple MacBook Pro",
+        "product_image": "https://i.ibb.co.com/BP0s7MW/apple2.webp",
+        "category": "MacBook",
+        "price": 3499,
+        "description": "Powerful MacBook Pro designed for professionals, featuring the M2 Max chip for ultimate performance.",
+        "specification": [
+            "16-inch Liquid Retina XDR display",
+            "Apple M2 Max chip",
+            "Up to 64GB RAM",
+            "Up to 8TB SSD",
+            "Battery life up to 22 hours"
+        ],
+        "availability": true,
+        "rating": 4.9
     }
 ]

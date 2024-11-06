@@ -1,38 +1,26 @@
 [
     {
-        "product_id": "P001",
-        "category": "iPhone"
+        "id": "C001",
+        "category": "Laptops"
     },
     {
-        "product_id": "P002",
+        "id": "C002",
         "category": "Phones"
     },
     {
-        "product_id": "P003",
+        "id": "C003",
         "category": "Accessories"
     },
     {
-        "product_id": "P004",
-        "category": "Laptops"
+        "id": "C004",
+        "category": "Watches"
     },
     {
-        "product_id": "P005",
-        "category": "Laptops"
+        "id": "C005",
+        "category": "MacBook"
     },
     {
-        "product_id": "P006",
-        "category": "Accessories"
-    },
-    {
-        "product_id": "P007",
-        "category": "Accessories"
-    },
-    {
-        "product_id": "P008",
-        "category": "Accessories"
-    },
-    {
-        "product_id": "P009",
-        "category": "Smart Watches"
+        "id": "C006",
+        "category": "IPhone"
     }
 ]
