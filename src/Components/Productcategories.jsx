@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
-import usetitle from "../Utils/title";
 
 
 const Productcategories = ({ categories }) => {
@@ -14,7 +13,7 @@ const Productcategories = ({ categories }) => {
                         <NavLink
                             to={`/productcards/${category.category}`}
                             key={category.id}
-                            className={({ isActive }) => `px-5 py-3 rounded-full text-base font-base  ${isActive ? 'bg-purple-500 text-white font-extrabold' : 'text-gray-400 bg-[#f3f3f3]'}`}
+                            className={({ isActive }) => `px-6 py-2 rounded-full text-base font-base  ${isActive ? 'bg-purple-500 text-white font-extrabold' : 'text-gray-400 bg-[#f3f3f3]'}`}
                         >
                             {category.category}
                         </NavLink>
