@@ -41,8 +41,8 @@ const Statictics = () => {
                         <Legend />
                         <CartesianGrid stroke="#D8A7D3" />
 
-                        <Area type="monotone" dataKey="rating" fill="#8884d8" stroke="#8884d8" />
-                        <Bar dataKey="price" barSize={20} fill="#413ea0" />
+                        <Area type="monotone" dataKey="rating" fill="#9538e2" stroke="#9538e2" />
+                        <Bar dataKey="price" barSize={20} fill="#9538e2" />
                         <Line type="monotone" dataKey="id" stroke="#D8A7D3" />
                     </ComposedChart>
                 </ResponsiveContainer>

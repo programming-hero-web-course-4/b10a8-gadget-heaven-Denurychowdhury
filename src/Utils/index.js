@@ -19,7 +19,7 @@ const handleaddCart = (product) => {
     if (newProduct) return toast.error('Already exist')
     products.push(product)
     localStorage.setItem('product', JSON.stringify(products))
-    toast.success('Add to cart')
+    toast.success('Add to cart!')
 
 }
 // handle remove

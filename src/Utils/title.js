@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 
-
 const usetitle = (title) => {
     const MainTitle='Gadget Heaven'
     useEffect(() => {

@@ -1,12 +1,17 @@
 /* eslint-disable react/prop-types */
 // import { useEffect, useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import usetitle from "../Utils/title";
 
 
 const Banner = ({ title, paragraph, btnone, btntwo }) => {
     const { pathname } = useLocation()
     usetitle('Dashboard')
+
+    const nav = useNavigate()
+    const handlenavigate = () => {
+        nav('/dashboard/cart')
+    }
     return (
         <>
             <div className={`bg-[#9538e2]  ${pathname === '/' ? ' md:w-11/12 mx-auto rounded-b-xl md:py-28 py-14 ' : 'md:py-28 py-14'}   `}>
@@ -14,7 +19,7 @@ const Banner = ({ title, paragraph, btnone, btntwo }) => {
                     <h1 className="md:text-5xl font-bold text-white ">{title}</h1>
                     <p className="text-white font-thin md:w-2/3">{paragraph}</p>
                     {
-                        pathname === '/' && <button className="bg-white text-xl px-5 font-bold  text-purple-500 py-3 rounded-2xl">
+                        pathname === '/' && <button onClick={handlenavigate} className="bg-white text-xl px-5 font-bold  text-purple-500 py-3 rounded-2xl">
                             {btnone}
                         </button>
                     }

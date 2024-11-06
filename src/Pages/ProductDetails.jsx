@@ -2,14 +2,13 @@ import { useContext, useEffect, useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { IoMdStar } from "react-icons/io";
+import ReactStars from "react-rating-stars-component";
 import { useLoaderData, useLocation, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import Banner from "../Components/Banner";
 import { CartCount, Wishcart } from "../Layouts/MainLayout";
 import { getCartItem, handleaddCart } from "../Utils";
 import usetitle from "../Utils/title";
-
-
 
 const ProductDetails = () => {
     usetitle("Details")
@@ -39,6 +38,14 @@ const ProductDetails = () => {
         handleaddCart(details)
         setCount(count + 1)
     }
+
+    // rating stars
+    const [userRating, setUserRating] = useState(0);
+    const handleRatingChange = (newRating) => {
+        setUserRating(newRating);
+        toast.success(`You rated this product ${newRating} stars!`);
+    };
+
     return (
         <div>
             {
@@ -72,17 +79,19 @@ const ProductDetails = () => {
                                 <h1 className="text-base font-bold flex items-center">Rating  <span className="text-[#f9c004]"><IoMdStar /></span></h1>
                                 <div className="flex items-center ">
                                     <div className="text-xl flex text-[#f9c004]">
-                                        <IoMdStar />
-                                        <IoMdStar />
-                                        <IoMdStar />
-                                        <IoMdStar />
+                                        <ReactStars
+                                            count={5}
+                                            value={details.ratings}
+                                            onChange={handleRatingChange}
+                                            size={24}
+                                            color2={'#ffd700'} />
                                     </div>
-                                    <span className=""><IoMdStar /></span>
+                                    <span className="">{userRating}</span>
                                 </div>
                             </div>
                             <div className="flex items-center gap-4">
                                 <button onClick={() => handledTocarts(details)} className="px-4 py-2 rounded-full flex items-center text-white font-bold bg-purple-500"><span>Add to cart</span><FiShoppingCart /></button>
-                                <button disabled={isActives} onClick={() => { setWish([...wish, details]), setIsActives(true), toast.success('Add to wishlist') }} className="p-3 rounded-full border border-gray-400"><FaRegHeart /></button>
+                                <button disabled={isActives} onClick={() => { setWish([...wish, details]), setIsActives(true), toast.success('Add to wishlist!') }} className="p-3 rounded-full border border-gray-400"><FaRegHeart /></button>
                             </div>
                         </div>
                     </div>

@@ -31,10 +31,11 @@ const Card = ({ card }) => {
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">{product_title}</h2>
-                    <p>Price:{price}k</p>
+                    <p className="text-gray-400">Price:{price}k</p>
                     <div className="card-actions">
                         {/* <NavLink to={`./productdetails/${product_id}`}> */}
-                        <button onClick={handlenav} className="btn border border-fuchsia-500 bg-transparent rounded-full">View Details</button>
+                        <button onClick={handlenav}
+                            className="btn border-2 border-fuchsia-500 bg-transparent text-base text-purple-500 flex items-center bg-gradient-to-r from-purple-500 to-[#da62e6] bg-clip-text text-transparent font-bold rounded-full">View Details</button>
                         {/* </NavLink> */}
                     </div>
                 </div>
