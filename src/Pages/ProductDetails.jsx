@@ -1,13 +1,13 @@
 import { useContext, useEffect, useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
+import { IoMdStar } from "react-icons/io";
 import { useLoaderData, useLocation, useParams } from "react-router-dom";
+import { toast } from "react-toastify";
 import Banner from "../Components/Banner";
 import { CartCount, Wishcart } from "../Layouts/MainLayout";
 import { getCartItem, handleaddCart } from "../Utils";
 import usetitle from "../Utils/title";
-import { IoMdStar } from "react-icons/io";
-import { toast } from "react-toastify";
 
 
 

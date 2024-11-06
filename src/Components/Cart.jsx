@@ -1,10 +1,9 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { PiSlidersBold } from "react-icons/pi";
 import { RxCrossCircled } from "react-icons/rx";
 import { Modal } from 'react-responsive-modal';
 import 'react-responsive-modal/styles.css';
 import { useNavigate } from "react-router-dom";
-import { CartCount } from "../Layouts/MainLayout";
 import { getCartItem, handleRemove } from "../Utils";
 import usetitle from "../Utils/title";
 import checkmark from '../assets/Group.png';
@@ -18,9 +17,6 @@ const Cart = () => {
     }
     const onOpenModal = () => setOpen(true);
     const onCloseModal = () => setOpen(false);
-
-    // count context api
-    const [count, setCount] = useContext(CartCount)
 
     // set to cart 
     const [cart, setCart] = useState([])
@@ -52,8 +48,6 @@ const Cart = () => {
         const moneys = allcarts.reduce((prev, current) => prev + current.price, 0)
         console.log(moneys);
         setMoney(moneys)
-        const carn = 1;
-        setCount(count + carn)
     }
     return (
         <div className="grid grid-cols-1 gap-4 my-10 md:w-11/12 mx-auto ">

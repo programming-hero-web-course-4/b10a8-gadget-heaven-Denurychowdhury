@@ -18,7 +18,7 @@ const Navbar = () => {
     }, [pathname])
     return (
         <>
-            <div className={`flex justify-between items-center md:w-11/12 ${isActive ? 'bg-[#9538e2] text-white rounded-t-xl' : ''}   mx-auto  z-40 '} `}>
+            <div className={`flex justify-between items-center md:w-11/12 ${isActive ? 'bg-[#9538e2] md:text-white rounded-t-xl' : ''}   mx-auto  z-40 '} `}>
                 <div className="">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -64,14 +64,14 @@ const Navbar = () => {
                         <span className={`p-3 rounded-full border  border-gray-300 ${isActive ? 'bg-white' : ''}`}>
                             <IoCartOutline />
                         </span>
-                        <span className={`absolute -top-3 px-1 rounded-full bg-purple-300 left-6`}> {count}</span>
+                        <span className={`absolute -top-3 px-1 rounded-full bg-purple-300 left-6`}>  {count}</span>
                     </p>
                     <p className="relative flex items-center text-black">
                         <span className={`p-3 rounded-full border  border-gray-300 ${isActive ? 'bg-white' : ''}`}>
                             <FaRegHeart />
                         </span>
                         <span className={`absolute -top-3 px-1 rounded-full bg-purple-300  left-6`}>
-                            {0}
+                            {count}
                         </span>
                     </p>
                 </div>
